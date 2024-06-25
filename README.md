@@ -40,7 +40,7 @@ One of the proofs of the theorem above is constructive; it defines an algorithm 
 ```
 The algorithm above finds an Eulerian circuit in a *connected* graph if it has one. In part 1 of this project I will implement this algorithm as a function eulerian_circuit(). Initially I will assume that the input graph is connected and Eulerian.
 
-It is worth noting that I make use of the networkx package when creating graphs.
+It is worth noting that I make use of the 'networkx' package when creating graphs.
 
 
 ## Part 1 Code Description:
@@ -66,7 +66,7 @@ In this part I will implement a function `all_positive_degree_vertices_connected
 
 ## Part 2 Code Description:
 
-This code checks whether all vertices in an undirected graph G with positive degree are connected to each other. If they are, it returns True, and if not, it returns False.
+This code checks whether all vertices in an undirected graph G with positive degree are connected to each other. If they are, it returns `True`, and if not, it returns `False`.
 
 The first function, performs a breadth-first search traversal of the graph G starting from the vertex u. It initialises a queue with the starting vertex u, and a set seen to keep track of the vertices that have been visited. It then enters a loop that continues until the queue is empty. In each iteration, it dequeues the first vertex in the queue, current_vertex, and checks if it has already been visited. If it has not been visited, it adds it to the seen set and adds all of its neighbors to the queue. The function returns the number of vertices that have been added to the seen set.
 
