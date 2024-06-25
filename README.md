@@ -76,8 +76,6 @@ It then chooses an arbitrary vertex u from the positive_degree_v list and perfor
 
 ## Part 3 
 
-## Part 3
-
 In the same way that an *Eulerian* cycle is one which contains every edge precisely once, a *Hamiltonian* cycle is one which contains every *vertex* precisely once (apart from whichever vertex is picked to be "first", which must be visited twice to obtain a cycle). Determinining whether a graph is *Hamiltonian* (contains a Hamiltonian cycle) is significantly harder than determining whether it is Eulerian. In particular, it is NP-complete.
 
 In this part I will implement a function `hamiltonian_cycle` which uses a backtrack search to find a Hamiltonian cycle in a graph, if one exists. Subsequently, I will use this function to find a Hamiltonian cycle in the Hoffman-Singleton graph; a highly symmetric, undirected graph with 50 vertices and 175 edges. It is a regular graph, meaning each vertex has the same number of edges, specifically 7 edges per vertex. An image of a Hoffman-Singleton graph can be seen in HF.png
